@@ -1,7 +1,15 @@
+/**
+ * classe que define um Dado
+ */
 public class Dado {
 
     private int num_lados;
     private int topo;
+
+    /**
+     * função de sobrecarga para a formatação de um dado
+     * @return retorna uma string no formato de um dado
+     */
 
     @Override
     public String toString() {
@@ -10,17 +18,17 @@ public class Dado {
 
         switch (topo) {
             case 1:
-                return ("+-----+\n|     |\n|  *  |\n|     |\n+-----+\n");
+                return ("+-------+\n|       |\n|   •   |\n|       |\n+-------+\n");
             case 2:
-                return ("+-----+\n|*    |\n|     |\n|    *|\n+-----+\n");
+                return ("+-------+\n| •     |\n|       |\n|     • |\n+-------+\n");
             case 3:
-                return ("+-----+\n|*    |\n|  *  |\n|    *|\n+-----+\n");
+                return ("+-------+\n| •     |\n|   •   |\n|     • |\n+-------+\n");
             case 4:
-                return ("+-----+\n|*   *|\n|     |\n|*   *|\n+-----+\n");
+                return ("+-------+\n| •   • |\n|       |\n| •   • |\n+-------+\n");
             case 5:
-                return ("+-----+\n|*   *|\n|  *  |\n|*   *|\n+-----+\n");
+                return ("+-------+\n| •   • |\n|   •   |\n| •   • |\n+-------+\n");
             case 6:
-                return ("+-----+\n|*   *|\n|*   *|\n|*   *|\n+-----+\n");
+                return ("+-------+\n| •   • |\n| •   • |\n| •   • |\n+-------+\n");
 
         }
         return "";
@@ -67,8 +75,8 @@ public class Dado {
      * main apenas para tests
      */
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Dado d = new Dado();
         System.out.println(d);
-    }
+    }*/
 }
